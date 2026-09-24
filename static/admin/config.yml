@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: weblitely/opsclient # Change to your actual username
+  branch: main
+  base_url: https://www.opsclient.com # Your actual domain
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Articles"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Meta Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
