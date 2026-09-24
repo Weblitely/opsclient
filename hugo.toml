@@ -1,0 +1,15 @@
+baseURL = 'https://www.opsclient.com/'
+languageCode = 'en-us'
+title = 'OpsClient'
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
+[params]
+  env = 'production'
+  description = 'Independent B2B Software Analysis & Workflow Comparisons'
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = false
